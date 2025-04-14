@@ -46,3 +46,14 @@ html {
         padding-right: 6rem;
     }
 }
+
+
+.gradient-text {
+    background: linear-gradient(90deg, #4668da, #30cfe4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.shadow-text {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
