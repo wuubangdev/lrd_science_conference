@@ -9,10 +9,10 @@ interface IMenuItem {
 
 const listMenu: IMenuItem[] = [
     { id: 1, title: "home", link: "/" },
-    { id: 1, title: "ban tổ chức", link: "/organization" },
-    { id: 1, title: "bài viết", link: "/paper" },
-    { id: 1, title: "các mốc thời gian", link: "/time-line" },
-    { id: 1, title: "tham quan", link: "/travel" },
+    { id: 2, title: "ban tổ chức", link: "/organization" },
+    { id: 3, title: "bài viết", link: "/paper" },
+    { id: 4, title: "các mốc thời gian", link: "/time-line" },
+    { id: 5, title: "tham quan", link: "/travel" },
 ]
 
 const NavMenu: React.FC = () => {
