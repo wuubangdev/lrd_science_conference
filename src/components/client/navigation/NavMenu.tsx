@@ -19,7 +19,7 @@ const NavMenu: React.FC = () => {
     return (
         <ul className='flex'>
             {listMenu && listMenu.map((item) =>
-                <li key={item.id} className='px-4 py-2 uppercase font-semibold group'>
+                <li key={item.id} className='px-4 py-2 uppercase font-semibold text-lg group'>
                     <Link to={item.link} className='group-hover:text-blue-700 duration-500'>{item.title}</Link>
                 </li>
             )}

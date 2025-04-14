@@ -15,6 +15,8 @@ import ListPaperAbstract from "./components/client/papers/ListPaperAbstract.tsx"
 import ListPaperFullText from "./components/client/papers/ListPaperFullText.tsx";
 import TimeLine from "./components/client/timeline/TimeLine.tsx";
 import Travel from "./components/client/travel/Travel.tsx";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 
 const router = createBrowserRouter([
