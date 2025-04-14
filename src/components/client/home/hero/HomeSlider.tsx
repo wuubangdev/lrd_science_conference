@@ -82,11 +82,11 @@ const PrevArrow = (props: CustomArrowProps) => {
 export default function HomeSlider() {
     var settings = {
         infinite: true,
-        speed: 1000,
+        speed: 1500,
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 2000,
+        autoplaySpeed: 3000,
         nextArrow: <NextArrow />,
         prevArrow: <PrevArrow />,
     };
