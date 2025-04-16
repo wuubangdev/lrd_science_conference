@@ -4,7 +4,7 @@ import React from 'react'
 const Introduction: React.FC = () => {
     return (
         <div className='w-full my-container py-14 bg-blue-50'>
-            <h1 className='text-4xl font-medium mb-10 text-center shadow-text'>Lời mời tham gia</h1>
+            <h1 className='text-4xl font-medium mb-10 text-center '>Lời mời tham gia</h1>
             <div className='grid md:grid-cols-2 grid-cols-1 gap-8'>
                 <div className=''>
                     <div className='w-full h-full rounded-lg relative overflow-hidden'>
