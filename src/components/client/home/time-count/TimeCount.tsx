@@ -64,9 +64,9 @@ const TimeCount: React.FC = () => {
     }, []);
 
     return (
-        <div className='my-container' style={{ paddingLeft: '0px', paddingRight: '0px' }}>
+        <div className='my-container'>
             <div className='w-full flex items-center text-4xl py-11 gap-8 justify-between'>
-                <h1 className='text-5xl font-medium text-center gradient-text'>Hội thảo khoa học quản lý đất đai năm 2025</h1>
+                <div className='text-5xl font-medium text-center gradient-text py-4'>Hội thảo khoa học quản lý đất đai năm 2025</div>
                 <div className='flex flex-col gap-4 items-center'>
                     <h1 className='text-2xl font-medium'>Thời gian còn lại</h1>
                     <div className='flex items-center gap-2 leading-none'>
