@@ -13,6 +13,7 @@ import Organization from "./components/client/organization/Organization.tsx";
 import TimeLine from "./components/client/timeline/TimeLine.tsx";
 import Travel from "./components/client/travel/Travel.tsx";
 import Paper from "./components/client/papers/Paper.tsx";
+import ImageManager from "./components/admin/files/image/ImageManager.tsx";
 
 
 const router = createBrowserRouter([
@@ -34,7 +35,8 @@ const router = createBrowserRouter([
     path: "/admin",
     Component: AdminLayout,
     children: [
-      { index: true, Component: Admin }
+      { index: true, Component: Admin },
+      { path: "files", Component: ImageManager },
     ]
   },
 ]);

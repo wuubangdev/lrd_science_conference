@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
 import {
     ContainerOutlined,
+    CreditCardOutlined,
     ExceptionOutlined,
+    ExclamationCircleOutlined,
+    FolderOpenOutlined,
     GroupOutlined,
     HomeOutlined,
     InsertRowAboveOutlined,
@@ -10,7 +13,7 @@ import {
     PictureOutlined,
 } from '@ant-design/icons';
 import { Button, Image, Layout, Menu, theme } from 'antd';
-import { Outlet } from 'react-router';
+import { Link, Outlet } from 'react-router';
 import DropDown from './components/admin/dropdown/DropDown';
 
 const { Header, Sider, Content } = Layout;
@@ -20,7 +23,6 @@ const AdminLayout: React.FC = () => {
     const {
         token: { colorBgContainer, borderRadiusLG },
     } = theme.useToken();
-
     return (
         <Layout style={{ minHeight: '100vh' }}>
             <Sider trigger={null} collapsible collapsed={collapsed}>
@@ -40,11 +42,26 @@ const AdminLayout: React.FC = () => {
                             key: '1',
                             icon: <HomeOutlined />,
                             label: 'Trang chủ',
+                            children: [
+                                {
+                                    key: '1-1',
+                                    icon: <CreditCardOutlined />,
+                                    label: <Link to={'/admin/banner'}>Banner</Link>,
+
+                                },
+                                {
+                                    key: '1-2',
+                                    icon: <ExclamationCircleOutlined />,
+                                    label: <Link to={'/admin/information'}>Thông tin</Link>,
+
+                                },
+                            ]
                         },
                         {
                             key: '2',
                             icon: <GroupOutlined />,
-                            label: 'Trang tổ chức',
+                            label: <Link to={'/admin/organization'}>Tổ chức</Link>,
+
                         },
                         {
                             key: '3',
@@ -54,24 +71,32 @@ const AdminLayout: React.FC = () => {
                                 {
                                     key: '3-1',
                                     icon: <ExceptionOutlined />,
-                                    label: 'Guiline'
+                                    label: <Link to={'/admin/guidline'}>Bài hướng dẫn</Link>,
+
                                 },
                                 {
                                     key: '3-2',
                                     icon: <InsertRowAboveOutlined />,
-                                    label: 'List Abstract'
+                                    label: <Link to={'/admin/abstract'}>Bài tóm tắt</Link>,
+
                                 },
                                 {
                                     key: '3-3',
                                     icon: <InsertRowAboveOutlined />,
-                                    label: 'List Fulltext'
+                                    label: <Link to={'/admin/fulltext'}>Bài toàn văn</Link>,
+
                                 },
                             ]
                         },
                         {
                             key: '3',
                             icon: <PictureOutlined />,
-                            label: 'Trang du lịch',
+                            label: <Link to={'/admin/travel'}>Thông tin du lịch</Link>,
+                        },
+                        {
+                            key: '4',
+                            icon: <FolderOpenOutlined />,
+                            label: <Link to={'/admin/files'}>Quản lý hình ảnh</Link>,
                         },
                     ]}
                 />

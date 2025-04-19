@@ -7,7 +7,7 @@ const items: MenuProps['items'] = [
     {
         label: (
             <a href="https://www.antgroup.com" target="_blank" rel="noopener noreferrer">
-                Thông tin
+                Thông tin chi tiết
             </a>
         ),
         key: '0',
