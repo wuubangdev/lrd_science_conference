@@ -9,7 +9,7 @@ const Navigation: React.FC = () => {
                 <img src='/logo.png' alt='logo' className='h-12 object-cover' />
             </div>
             {/* Menu */}
-            <div className='flex-1 flex items-center justify-end'>
+            <div className='flex-1 md:flex hidden items-center justify-end'>
                 <NavMenu />
             </div>
         </div>

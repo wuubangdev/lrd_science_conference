@@ -7,8 +7,8 @@ const Footer: React.FC = () => {
                 <div className='mb-2 border-b-[1px] border-gray-700/35 pb-2'>
                     <img src='/logo.png' alt='logo' className='h-12 object-cover hover:scale-105 duration-500 cursor-pointer' />
                 </div>
-                <div>
-                    <a href="">Trường Đại học Cần Thơ. Khoa Môi trường và Tài nguyên Thiên nhiên</a>
+                <div className='text-center'>
+                    <a href="" className='text-center'>Trường Đại học Cần Thơ. Khoa Môi trường và Tài nguyên Thiên nhiên</a>
                 </div>
                 <div>
                     Website:
@@ -28,7 +28,7 @@ const Footer: React.FC = () => {
                     >
                         &nbsp;lrconference@ctu.edu.vn</a>
                 </div>
-                <div className='cursor-default'>
+                <div className='cursor-default text-center'>
                     © Hội thảo Quản lý đất đai toàn quốc lần 3 (2025)
                 </div>
             </div>

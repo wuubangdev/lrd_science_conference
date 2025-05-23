@@ -8,10 +8,10 @@ interface ITimeElementProps {
 const TimeElement: React.FC<ITimeElementProps> = ({ time, label }) => {
     return (
         <div className='flex flex-col justify-center items-center gap-2'>
-            <div className='rounded-2xl bg-blue-500 text-5xl text-center p-8 text-white min-w-[100px]'>
+            <div className='rounded-2xl bg-blue-500 md:text-5xl text-2xl text-center md:p-8 p-6 text-white md:min-w-[100px]'>
                 {time ? time : '00'}
             </div>
-            <div className='text-xl'>
+            <div className='md:text-xl text-lg'>
                 {label}
             </div>
         </div>
@@ -65,8 +65,8 @@ const TimeCount: React.FC = () => {
 
     return (
         <div className='my-container'>
-            <div className='w-full flex items-center text-4xl py-11 gap-8 justify-between'>
-                <div className='text-5xl font-medium text-center gradient-text py-4'>Hội thảo khoa học quản lý đất đai năm 2025</div>
+            <div className='w-full flex flex-col md:flex-row items-center text-4xl py-11 gap-8 justify-between'>
+                <div className='md:text-5xl text-4xl font-medium text-center gradient-text py-4'>Hội thảo khoa học quản lý đất đai năm 2025</div>
                 <div className='flex flex-col gap-4 items-center'>
                     <h1 className='text-2xl font-medium'>Thời gian còn lại</h1>
                     <div className='flex items-center gap-2 leading-none'>
