@@ -6,13 +6,11 @@ import {
     ExclamationCircleOutlined,
     FieldTimeOutlined,
     FolderOpenOutlined,
-    GroupOutlined,
     HomeOutlined,
     InfoCircleOutlined,
     InsertRowAboveOutlined,
     MenuFoldOutlined,
     MenuUnfoldOutlined,
-    PictureOutlined,
     TeamOutlined,
 } from '@ant-design/icons';
 import { Button, Image, Layout, Menu, theme } from 'antd';
