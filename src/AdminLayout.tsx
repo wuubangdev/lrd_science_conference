@@ -4,13 +4,16 @@ import {
     CreditCardOutlined,
     ExceptionOutlined,
     ExclamationCircleOutlined,
+    FieldTimeOutlined,
     FolderOpenOutlined,
     GroupOutlined,
     HomeOutlined,
+    InfoCircleOutlined,
     InsertRowAboveOutlined,
     MenuFoldOutlined,
     MenuUnfoldOutlined,
     PictureOutlined,
+    TeamOutlined,
 } from '@ant-design/icons';
 import { Button, Image, Layout, Menu, theme } from 'antd';
 import { Link, Outlet } from 'react-router';
@@ -25,7 +28,7 @@ const AdminLayout: React.FC = () => {
     } = theme.useToken();
     return (
         <Layout style={{ minHeight: '100vh' }}>
-            <Sider trigger={null} collapsible collapsed={collapsed}>
+            <Sider trigger={null} collapsible collapsed={collapsed} width={280}>
                 <div className="demo-logo-vertical p-4 border-b-[1px] border-white/20" >
                     {!collapsed &&
                         <div className='relative'>
@@ -51,15 +54,39 @@ const AdminLayout: React.FC = () => {
                                 },
                                 {
                                     key: '1-2',
+                                    icon: <FieldTimeOutlined />,
+                                    label: <Link to={'/admin/time-count'}>Thời gian đếm ngược</Link>,
+
+                                },
+                                {
+                                    key: '1-3',
                                     icon: <ExclamationCircleOutlined />,
                                     label: <Link to={'/admin/information'}>Thông tin</Link>,
+
+                                },
+                                {
+                                    key: '1-4',
+                                    icon: <ExclamationCircleOutlined />,
+                                    label: <Link to={'/admin/conference-theme'}>Chủ đề hội thảo</Link>,
+
+                                },
+                                {
+                                    key: '1-5',
+                                    icon: <FieldTimeOutlined />,
+                                    label: <Link to={'/admin/home-timeline'}>Các mốc thời gian</Link>,
+
+                                },
+                                {
+                                    key: '1-6',
+                                    icon: <ExclamationCircleOutlined />,
+                                    label: <Link to={'/admin/home-guidleline'}>Hướng dẫn viết bài</Link>,
 
                                 },
                             ]
                         },
                         {
                             key: '2',
-                            icon: <GroupOutlined />,
+                            icon: <TeamOutlined />,
                             label: <Link to={'/admin/organization'}>Tổ chức</Link>,
 
                         },
@@ -90,11 +117,16 @@ const AdminLayout: React.FC = () => {
                         },
                         {
                             key: '3',
-                            icon: <PictureOutlined />,
-                            label: <Link to={'/admin/travel'}>Thông tin du lịch</Link>,
+                            icon: <FieldTimeOutlined />,
+                            label: <Link to={'/admin/timeline'}>Mốc thời gian</Link>,
                         },
                         {
                             key: '4',
+                            icon: <InfoCircleOutlined />,
+                            label: <Link to={'/admin/travel'}>Thông tin du lịch</Link>,
+                        },
+                        {
+                            key: '5',
                             icon: <FolderOpenOutlined />,
                             label: <Link to={'/admin/files'}>Quản lý hình ảnh</Link>,
                         },

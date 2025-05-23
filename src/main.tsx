@@ -20,6 +20,12 @@ import PaperGuideline from "./components/admin/paper/PaperGuideline.tsx";
 import PaperAbstract from "./components/admin/paper/PaperAbstract.tsx";
 import PaperFulltext from "./components/admin/paper/PaperFulltext.tsx";
 import TravelInfo from "./components/admin/travel/TravelInfo.tsx";
+import ATimeCount from "./components/admin/home/ATimeCount.tsx";
+import AInformation from "./components/admin/home/AInformation.tsx";
+import AConferenceTheme from "./components/admin/home/AConferenceTheme.tsx";
+import ATimeLine from "./components/admin/home/ATimeLine.tsx";
+import AGuideline from "./components/admin/home/AGuideline.tsx";
+import AdminTimeLine from "./components/admin/timeline/AdminTimeLine.tsx";
 
 
 const router = createBrowserRouter([
@@ -40,11 +46,22 @@ const router = createBrowserRouter([
     children: [
       { index: true, Component: Admin },
       { path: "files", Component: ImageManager },
+      // home
       { path: "banner", Component: Banner },
+      { path: "time-count", Component: ATimeCount },
+      { path: "information", Component: AInformation },
+      { path: "conference-theme", Component: AConferenceTheme },
+      { path: "home-timeline", Component: ATimeLine },
+      { path: "home-guidleline", Component: AGuideline },
+      // Organization
       { path: "organization", Component: OrganizationAdmin },
+      // Paper
       { path: "guideline", Component: PaperGuideline },
       { path: "abstract", Component: PaperAbstract },
       { path: "fulltext", Component: PaperFulltext },
+      // Timeline
+      { path: "timeline", Component: AdminTimeLine },
+      // Travel
       { path: "travel", Component: TravelInfo },
     ]
   },
