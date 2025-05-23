@@ -71,7 +71,7 @@ const AdminLayout: React.FC = () => {
                                 {
                                     key: '3-1',
                                     icon: <ExceptionOutlined />,
-                                    label: <Link to={'/admin/guidline'}>Bài hướng dẫn</Link>,
+                                    label: <Link to={'/admin/guideline'}>Bài hướng dẫn</Link>,
 
                                 },
                                 {
